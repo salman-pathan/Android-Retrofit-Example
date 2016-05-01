@@ -1,15 +1,28 @@
 package com.codiodes.retrofitexample.entity;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Salman on 4/30/2016.
  */
 public class User {
 
+    @SerializedName("gender")
     private String gender;
+
+    @SerializedName("name")
     private Name name;
+
+    @SerializedName("location")
     private Location location;
+
+    @SerializedName("email")
     private String email;
+
+    @SerializedName("cell")
     private String cell;
+
+    @SerializedName("nat")
     private String nat;
 
     public User(String gender, Name name, Location location, String email, String cell, String nat) {
