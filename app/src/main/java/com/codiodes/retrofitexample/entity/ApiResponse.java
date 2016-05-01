@@ -1,5 +1,7 @@
 package com.codiodes.retrofitexample.entity;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -7,6 +9,7 @@ import java.util.List;
  */
 public class ApiResponse {
 
+    @SerializedName("results")
     private List<User> results;
 
     public ApiResponse(List<User> results) {
